@@ -1,4 +1,4 @@
-﻿name: Deploy to ECS Fargate
+name: Deploy to ECS Fargate
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
 
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
-  ECR_REPOSITORY: ventas-repo
-  ECS_CLUSTER: TU_CLUSTER_AQUI
+  ECR_REPOSITORY: innovatech/ventas
+  ECS_CLUSTER: innovatech-cluster
   ECS_SERVICE: ventas-service
 
 jobs:
